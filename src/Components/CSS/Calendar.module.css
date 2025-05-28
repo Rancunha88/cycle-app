@@ -1,0 +1,100 @@
+.calendar_wrapper {
+    display: flex;
+    width: 100%;
+    background-color: var(--color-black);
+    justify-content: center;
+	padding: var(--external-padding);
+}
+
+.calendar {
+	width: 80%;
+}
+
+.heading {
+	font-family: var(--font-family);
+	font-size: var(--header-font-size);
+	color: var(--color-white);
+	letter-spacing: 0.3rem;
+}
+
+.navigate_date {
+	display: flex;
+	align-items: center;
+	column-gap: 1rem;
+	margin: 2rem 0;
+}
+
+.navigate_date h2 {
+    font-size: var(--sub-header-font-size);
+    color: var(--color-white);
+}
+
+.buttons {
+	display: flex;
+	column-gap: 1rem;
+	margin-left: auto;
+}
+
+.buttons i {
+	width: 3.5rem;
+	height: 3.5rem;
+	background-color: var(--color-white);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	color: var(--color-black);
+	cursor: pointer;
+}
+
+.weekdays {
+	width: 100%;
+	display: flex;
+	margin: 3rem 0;
+}
+
+.weekdays span {
+    width: calc(100% / 7);
+    font-size: var(--text-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-white);
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.days {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.days span {
+	font-size: var(--text-font-size);
+	width: calc(100% / 7);
+	aspect-ratio: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-white);
+	cursor: pointer;
+}
+
+.current_day {
+	background-color: var(--color-black);
+	border-radius: 50%;
+	border: solid 1px var(--color-white);
+}
+
+.selected_day {
+	background-color: var(--color-black);
+	border-radius: 50%;
+	border: solid 1px var(--color-white);
+}
+
+.highlighted_day {
+  background-color: #646464;
+  border-radius: 50%;
+  font-weight: bold;
+}

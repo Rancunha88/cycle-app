@@ -1,0 +1,26 @@
+.productList {
+	display: grid;
+	grid-template-columns: 1fr; /* Full-width rows by default */
+}
+
+.productList_wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.productItem {
+	display: grid;
+	grid-template-columns: 3fr 0.5fr 1fr 0fr; /* Columns: Name | Quantity | Date | Actions */
+	padding: 1rem;
+	gap: 0.5rem;
+	align-items: center; /* Vertically center content */
+	font-size: var(--text-font-size);
+}
+
+.productItem h3 {
+	margin: 0;
+	width: fit-content;
+}
+
+.productName {
+	flex-grow: 1;
+}
