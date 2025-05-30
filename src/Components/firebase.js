@@ -1,8 +1,13 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 
+const REACT_APP_FIREBASE_API_KEY = './process.env.REACT_APP_FIREBASE_API_KEY';
+if (!REACT_APP_FIREBASE_API_KEY) {
+  throw new Error("Missing Firebase API key");
+}
+
 const firebaseConfig = {
-  apiKey: FIREBASE_API_KEY,
+  apiKey: REACT_APP_FIREBASE_API_KEY,
   authDomain: "cycle-calendar-f0a83.firebaseapp.com",
   projectId: "cycle-calendar-f0a83",
   storageBucket: "cycle-calendar-f0a83.firebasestorage.app",

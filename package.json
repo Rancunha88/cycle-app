@@ -13,6 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dotenv": "^16.5.0",
     "firebase": "^11.8.1",
     "firestore": "^1.1.6",
     "react": "^19.1.0",

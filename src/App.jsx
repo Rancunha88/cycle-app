@@ -10,6 +10,9 @@ import addProperty from './assets/icons8-add-database-48.png';
 import steroid from './assets/steroid_white.png';
 
 const App = () => {
+
+	console.log('App component rendered'); // For debugging purposes
+
 	const [activeComponent, setActiveComponent] = useState('home');
 	const [today, setToday] = useState(new Date());
 	const [selectedDate, setSelectedDate] = useState(today);
@@ -123,7 +126,7 @@ const App = () => {
 						<img src={steroid} alt="" style={{ width: '200px', height: '200px' }} />
 						<h1>Cycle Calendar</h1>
 						<p style={{ width: '60%', margin: '0 auto' }}>
-							Your personal juice tracker.
+							Personal juice tracker.
 						</p>
 					</div>
 				)}
