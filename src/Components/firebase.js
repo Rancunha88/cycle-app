@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "API_KEY",
+  apiKey: FIREBASE_API_KEY,
   authDomain: "cycle-calendar-f0a83.firebaseapp.com",
   projectId: "cycle-calendar-f0a83",
   storageBucket: "cycle-calendar-f0a83.firebasestorage.app",
