@@ -141,7 +141,7 @@ const ProductForm = () => {
 							<span style={{ width: 'max-content' }}>{prod.size} mg</span>
 						</div>
 						<button
-							className="close-usage-event"
+							className={productFormStyle.deleteButton}
 							type="button"
 							onClick={() => {
 								deleteEvent(prod.id);

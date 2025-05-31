@@ -98,8 +98,7 @@ const Events = ({ selectedDate, today, updateCalendar }) => {
 				</div>
 				<div
 					style={{
-						maxHeight: '10vh',
-						overflowY: 'auto',
+						Height: '10vh',
 						display: 'flex',
 						flexDirection: 'column',
 						gap: '1rem',
@@ -140,7 +139,7 @@ const Events = ({ selectedDate, today, updateCalendar }) => {
 							{event.date.toDate().toLocaleDateString('en-US', { day: 'numeric', month: 'long' })}
 						</div>
 						<button
-							className="close-usage-event"
+							className={eventsStyle.closeUsageEvent}
 							onClick={() => {
 								deleteEvent(event.id);
 							}}

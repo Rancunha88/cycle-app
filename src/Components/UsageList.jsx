@@ -50,7 +50,7 @@ const UsageList = ({ updateCalendar }) => {
 						{event.date.toDate().toLocaleDateString('en-US', { day: 'numeric', month: 'long' })}
 					</div>
 					<button
-						className="close-usage-event"
+						className={usageListStyle.deleteButton}
 						onClick={() => {
 							deleteEvent(event.id);
 						}}

@@ -71,10 +71,20 @@
 
 .productItemList {
 	display: grid;
-	grid-template-columns: 5fr 1fr 2fr 20px; /* Columns: Name | Quantity | Date | Actions */
+	grid-template-columns: 5fr 1fr 2fr 25px; /* Columns: Name | Quantity | Date | Actions */
 	gap: 0.5rem;
 	align-items: center; /* Vertically center content */
+	justify-content: center;
 	font-size: var(--text-font-size);
 	margin-block: 0.5rem;
-	max-width: 100%;
+	max-width: 98%;
+}
+
+.closeUsageEvent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40%;
+    width: 3rem;
+    aspect-ratio: 2/1.5;
 }

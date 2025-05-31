@@ -8,5 +8,9 @@ export default defineConfig({
   // build: {
   //   chunkSizeWarningLimit: 1600,
   // },
-  
+
+  server: {
+    allowedHosts: ['568d-80-233-52-175.ngrok-free.app']
+  }
+
 })

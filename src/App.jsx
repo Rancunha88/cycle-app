@@ -10,7 +10,6 @@ import addProperty from './assets/icons8-add-database-48.png';
 import steroid from './assets/steroid_white.png';
 
 const App = () => {
-
 	console.log('App component rendered'); // For debugging purposes
 
 	const [activeComponent, setActiveComponent] = useState('home');
@@ -29,15 +28,17 @@ const App = () => {
 
 	const handleHomeSelect = () => {
 		setActiveComponent('home');
-		handleIntroPage()
+		handleIntroPage();
 	};
 
 	const handleAddPropertySelect = () => {
 		setActiveComponent('addProperty');
+		handleIntroPage();
 	};
 
 	const handleListSelect = () => {
 		setActiveComponent('usageList');
+		handleIntroPage();
 	};
 
 	const handleDateSelect = (selectedDate) => {
@@ -58,6 +59,8 @@ const App = () => {
 
 	return (
 		<div className="container">
+			<div className="header-corner-bottom-right"></div>
+			<div className="header-corner-bottom-left"></div>
 			<div className="header">
 				<img src={home} onClick={handleHomeSelect} alt="" />
 				<img src={list} onClick={handleListSelect} alt="" />
@@ -108,8 +111,7 @@ const App = () => {
 							left: '0',
 							backgroundColor: 'Black',
 							width: '100vw',
-							maxWidth: '430px',
-							height: '93vh',
+							height: '95vh',
 							display: 'flex',
 							flexDirection: 'column',
 							justifyContent: 'center',
@@ -121,13 +123,12 @@ const App = () => {
 							textAlign: 'center',
 							transition: 'opacity ease-out 1s',
 							opacity: introPage ? '1' : '0.5',
+							screehnSize: '80vw',
 						}}
 					>
 						<img src={steroid} alt="" style={{ width: '200px', height: '200px' }} />
 						<h1>Cycle Calendar</h1>
-						<p style={{ width: '60%', margin: '0 auto' }}>
-							Personal juice tracker.
-						</p>
+						<p style={{ width: '60%', margin: '0 auto' }}>Personal juice tracker.</p>
 					</div>
 				)}
 			</div>
