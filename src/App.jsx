@@ -111,7 +111,7 @@ const App = () => {
 							left: '0',
 							backgroundColor: 'Black',
 							width: '100vw',
-							height: '95vh',
+							height: '90vh',
 							display: 'flex',
 							flexDirection: 'column',
 							justifyContent: 'center',
@@ -123,7 +123,7 @@ const App = () => {
 							textAlign: 'center',
 							transition: 'opacity ease-out 1s',
 							opacity: introPage ? '1' : '0.5',
-							screehnSize: '80vw',
+							
 						}}
 					>
 						<img src={steroid} alt="" style={{ width: '200px', height: '200px' }} />
